@@ -1,0 +1,121 @@
+*
+ {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header {
+    background: rgba(0,0,0, .1);
+    padding: 0 0 0 15px;
+    margin: 0 0 15px 0;
+}
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.table-container{
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    min-width: 800px;
+    margin-top: 25px;
+}
+.table-container table {
+    margin: 0 auto;
+    table-layout: fixed;
+    min-width: 800px;
+    height: 100px;
+}
+.table-container table th {
+    padding: 2px 2px 2px 4px;
+    cursor: pointer;
+}
+.table-container table td{
+    font-size: 14px;
+    padding: 2px 2px 2px 4px;
+    max-width: 200px;
+    min-width: 50px;
+    height: 50px;
+    overflow: auto;
+    overflow-y: auto;
+    vertical-align: top;
+    
+}
+.add_close_btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 32px;
+}
+.add_form_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: none;
+    background: rgba(0, 0, 0, .5);
+}
+.admin_edit_container {
+    position: absolute;
+    display: none;
+    background: #ccc;
+    margin: 0 auto;
+    top: 100px;
+    left: 100px;
+    border: 4px solid red;
+    width: 400px;
+    border-radius: 4px;
+}
+.admin_edit_container .edit_close_btn {
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 32px;
+}
+.status_snd {
+    float: left;
+    margin: 0 15px;
+}
+.admin_edit_container button, .admin_edit_container input, .admin_edit_container textarea {
+    width: 100%;
+}
+.new_task_container {
+    display: block;
+    margin: 0 auto;
+    width: 310px;
+    padding: 5px;
+    border: 1px solid green;
+}
+.add_form_container form{
+    display: block;
+    width: 300px;
+    left: 100px;
+    top: 100px;
+    margin: 0 auto;
+    border: 1px solid#ccc;
+    border-radius: 3px;
+}
+.add_form {
+    width: 300px;
+}
+.add_form_container textarea {
+    width: 300px;
+    height: 50px;
+}
+.table-bordered button {
+    width: 150px;
+}
+.message {
+    display: none;
+    font-weight: 600;
+    color: #fff;
+}
+.btn-toolbar {
+    margin: 0 auto;
+    width: 400px;
+}
