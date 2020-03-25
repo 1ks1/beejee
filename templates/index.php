@@ -60,6 +60,7 @@ Hello, <?PHP echo $data['username'] .' '. $data['log_button'] ?>
   var userName = document.cookie.replace(/(?:(?:^|.*;\s*)userName\s*\=\s*([^;]*).*$)|^.*$/, "$1");
   var token = document.cookie.replace(/(?:(?:^|.*;\s*)token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
   //скрипт не выносил намеренно из за хостингов
+
   $(".send_edit").click(function() {
     let url = '/home/edit';
     let data_obj = {
@@ -110,9 +111,8 @@ Hello, <?PHP echo $data['username'] .' '. $data['log_button'] ?>
     var url = '/home/add';
     var msg = sendPost(data_obj, url);
     if (msg == 'OK') {
-          location.reload(1000);
         }
-        $(".message").text(msg);
+        $(".message").text('Успешно добавлено');
         $(".message").show();
 
   });
